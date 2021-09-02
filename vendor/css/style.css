@@ -4,5 +4,11 @@
 }
 
 .heading{
-    bac
+    background-image: url('./../../images/SPC_02.png');
+    height: 400px;
+    background-repeat: no-repeat;
+}
+
+.heading-text{
+    font-size: 2.2rem;
 }
