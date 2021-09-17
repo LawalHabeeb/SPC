@@ -1,9 +1,12 @@
 :root{
-    --clr-base: #000;
-    --clr-base2: #fff;
+    --clr-base: #0B2A56;
+    --clr-base2: #6F7881;
+    --clr-base3: #036FDB;
+    --clr-white: #fff;
+    --clr-black: #000;
 }
 
-.heading{
+.head{
     background-image: url('./../../images/SPC_02.png');
     height: 400px;
     background-repeat: no-repeat;
@@ -11,4 +14,38 @@
 
 .heading-text{
     font-size: 2.2rem;
+}
+
+/**********************
+    GENERAL STYLES
+**********************/
+
+a{
+    text-decoration: none;
+    color: var(--clr-black);
+}
+
+a:hover{
+    text-decoration: none;
+    color: var(--clr-base);
+}
+
+/**********************
+        INDEX
+**********************/
+
+.heading{
+    color: var(--clr-base2);
+}
+
+.insight_load_btn{
+    width: 120px;
+    background-color: var(--clr-base3);
+    margin: 0 auto;
+}
+
+.follow_us{
+    background-color: var(--clr-base);
+    color: var(--clr-white);
+    height: 80px;
 }
