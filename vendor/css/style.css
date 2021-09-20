@@ -27,7 +27,7 @@ a{
 
 a:hover{
     text-decoration: none;
-    color: var(--clr-base);
+    color: var(--clr-black);
 }
 
 /**********************
@@ -47,5 +47,6 @@ a:hover{
 .follow_us{
     background-color: var(--clr-base);
     color: var(--clr-white);
-    height: 80px;
+    height: 50px;
+    font-size: 25px;
 }
