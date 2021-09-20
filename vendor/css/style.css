@@ -50,3 +50,14 @@ a:hover{
     height: 50px;
     font-size: 25px;
 }
+
+/**********************
+        INDEX
+**********************/
+
+.team_btn{
+   width: 120px;
+   background-color: var(--clr-base3);
+   margin: 0 auto;
+   height: 25px;
+}
