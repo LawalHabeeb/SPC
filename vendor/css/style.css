@@ -30,6 +30,22 @@ a:hover{
     color: var(--clr-black);
 }
 
+.fa-facebook{
+    color: #1778F2;
+}
+
+.fa-instagram{
+    color: #CD486B;
+}
+
+.fa-linkedin{
+    color: #0E76A8;
+}
+
+.fa-twitter{
+    color: #1DA1F2;
+}
+
 /**********************
         INDEX
 **********************/
@@ -68,11 +84,21 @@ a:hover{
 }
 
 /**********************
-        ABOUT
+      SERVICES
 **********************/
 
 .service{
     width: 120px;
     border: 2px solid var(--clr-base2);
     margin-bottom: 15px;
+}
+
+/**********************
+      TEAM_VIEW
+**********************/
+
+.card{
+    border: none;
+    margin-top:20px;
+    margin-bottom: 50px;
 }
