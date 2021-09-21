@@ -52,7 +52,7 @@ a:hover{
 }
 
 /**********************
-        INDEX
+        ABOUT
 **********************/
 
 .team_btn{
@@ -60,4 +60,19 @@ a:hover{
    background-color: var(--clr-base3);
    margin: 0 auto;
    height: 25px;
+}
+
+.team{
+    font-size: 25px;
+    margin-left: 3px;
+}
+
+/**********************
+        ABOUT
+**********************/
+
+.service{
+    width: 120px;
+    border: 2px solid var(--clr-base2);
+    margin-bottom: 15px;
 }
