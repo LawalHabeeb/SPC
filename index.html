@@ -9,16 +9,43 @@
     <link rel="stylesheet" href="vendor/css/all.min.css">
     <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/css/style.css">
+    
     <script src="vendor/js/all.min.js"></script>
+	<script src="vendor/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
 
     <header class="head">
-        <p class="fw-bold heading-text align-items-center" style="font-family: Roboto;">The ability to strategize better
-            gives <br> you a cutting edge against competitors</p>
-        <a href="about.html" class="btn btn-primary ms-4">About us</a>
-        <a href="" class="btn">Contact us</a>
+		<div id="demo" class="carousel slide" data-bs-ride="carousel">
+			<!-- Indicators/dots -->
+			<div class="carousel-indicators">
+			<button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+			<button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+			<button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+			</div>
+			<!-- The slideshow/carousel -->
+			<div class="carousel-inner">
+				<div class="carousel-item active head">
+					<img src="images/SPC _header01.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+					<div class="carousel-caption">
+					    <p>We had such a great time in LA!</p>
+					</div>
+				</div>
+				<div class="carousel-item head">
+					<img src="images/SPC_02.png" alt="Chicago" class="d-block" style="width:100%">
+					<div class="carousel-caption">
+					    <p>Thank you, Chicago!</p>
+					</div> 
+				</div>
+				<div class="carousel-item head">
+					<img src="images/SPC_header03.jpg" alt="New York" class="d-block" style="width:100%">
+					<div class="carousel-caption">
+					    <p>We love the Big Apple!</p>
+					</div>  
+				</div>
+			</div>
+        </div>
     </header>
     <div class="container mb-3">
         <div class="row mt-3 d-flex align-items-center justify-content-center">
