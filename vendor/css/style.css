@@ -13,6 +13,11 @@
 .head{
     height: auto;
     background-repeat: no-repeat;
+    position: relative;
+}
+
+.about-head{
+    background-image: url(./../../images/SPC_about.jpeg);
 }
 
 .heading_text{
