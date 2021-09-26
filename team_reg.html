@@ -22,7 +22,7 @@
 			  <a class="navbar-brand text-success" href="index.html">
 				<img
 				  src="#"
-				  alt="SPC log0"
+				  alt="SPC logo"
 				  height="24"
 				  class="d-inline-block align-text-top"
 				/>
@@ -39,32 +39,55 @@
 				<span class="navbar-toggler-icon"></span>
 			  </button>
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
 				  <li class="nav-item">
 					<a class="nav-link text-dark" href="about.html">About</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Industries </a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <li>
+						<a class="dropdown-item" href="">Agribusiness</a>
+					  </li>
+					  <li>
+						<a class="dropdown-item" href="">Technology, Information, Communication and Entertainment</a>
+					  </li>
+					  <li>
+						<a class="dropdown-item" href="">Energy utilities and Mining</a>
+					  </li>
+					  <li>
+						<a class="dropdown-item" href="">Oil and Gas</a>
+					  </li>
+					  <li>
+						<a class="dropdown-item" href="">Power and Utilities</a>
+					  </li>
+					</ul>
 				  </li>
 				  <li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Services </a>
 					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 					  <li>
-						<a class="dropdown-item" href="{% url 'qanda:question_list' %}">Text questions</a>
+						<a class="dropdown-item" href="accandass.html">Accounting and Assurance</a>
 					  </li>
 					  <li>
-						<a class="dropdown-item" href="{% url 'qanda:question_voice_list' %}">Voiced questions</a>
+						<a class="dropdown-item" href="fin.html">Financial Advisory</a>
+					  </li>
+					  <li>
+						<a class="dropdown-item" href="ita.html">Information Technology Advisory</a>
+					  </li>
+					  <li>
+						<a class="dropdown-item" href="risk.html">Risk Advisory</a>
+					  </li>
+					  <li>
+						<a class="dropdown-item" href="tax.html">Tax Advisory</a>
 					  </li>
 					</ul>
-				  </li>
-	  
-				  <li class="nav-item">
-					<a class="nav-link text-dark" href="{% url 'job:job_list' %}"
-					  >Jobs</a
-					>
 				  </li>
 				  <li class="nav-item">
 					<a
 					  class="nav-link text-dark"
-					  href="{% url 'archive:archive_list' %}"
-					  >Archives</a
+					  href=""
+					  >Careers</a
 					>
 				  </li>
 				</ul>
@@ -95,5 +118,55 @@
 			</div>
   		</div>	
 	</div>
+
+	<footer class="fixed-bottom">
+		<div class="row">
+
+			<div class="col-lg-4">
+				<a href="industries.html"> <h5>Industries</h5> </a>
+				<hr style="height: 3px; width: 200px;">
+				<ul>
+					<li>
+						<a href="accandass.html">Accounting and Assurance</a>
+					</li>
+					<li>
+						<a href="fin.html">Financial Advisory</a>
+					</li>
+					<li>
+						<a href="ita.html">Information Technology Advisory</a>
+					</li>
+					<li>
+						<a href="tax.html">Tax Advisory</a>
+					</li>
+					<li>
+						<a href="risk.html">Risk Advisory</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-4" d-block>
+				<a href="services.html"> <h5>Services</h5> </a>
+				<hr style="height: 3px; width: 200px;">
+				<ul>
+					<li>
+						<a href="accandass.html">Accounting and Assurance</a>
+					</li>
+					<li>
+						<a href="fin.html">Financial Advisory</a>
+					</li>
+					<li>
+						<a href="ita.html">Information Technology Advisory</a>
+					</li>
+					<li>
+						<a href="tax.html">Tax Advisory</a>
+					</li>
+					<li>
+						<a href="risk.html">Risk Advisory</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-4"></div>
+
+		</div>
+	</footer>
 </body>
 </html>
