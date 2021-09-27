@@ -29,8 +29,24 @@
     background-image: url(./../../images/SPC_fin.jpg);
 }
 
+.service-head{
+    background-image: url(./../../images/SPC_02.png);
+}
+
+.tax-head{
+    background-image: url(./../../images/SPC_tax.jpg);
+}
+
+.ita-head{
+    background-image: url(./../../images/SPC_ita1.jpg);
+}
+
+.risk-head{
+    background-image: url(./../../images/SPC_risk.jpg);
+}
+
 .hero-image{
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     height: 37.5rem;
@@ -42,19 +58,10 @@
     position: absolute;
     padding: 35px;
     background-color: var(--clr-black);
+    width: 75%;
     color: white;
     bottom: 0;
 }
-
-.service_head{
-    background-image: url(./../../images/SPC_services.jpg);
-}
-
-.heading-text::before{
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    filter: blur(20px);
-} 
 
 /**********************
     GENERAL STYLES
