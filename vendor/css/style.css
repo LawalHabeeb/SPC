@@ -11,22 +11,50 @@
 **********************/
 
 .head{
-    height: auto;
+    height: 37.5rem;
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 
 .about-head{
-    background-image: url(./../../images/SPC_about.jpeg);
+    background-image: url("./../../images/SPC_about.jpeg");
 }
 
-.heading_text{
-    font-size: 2.2rem;
-    position: absolute;
-    bottom: 0;
-    height: 100%;
-    vertical-align: bottom;
+.assure-head{
+    background-image: url(./../../images/SPC_advisory.jpg);
 }
+
+.fin-head{
+    background-image: url(./../../images/SPC_fin.jpg);
+}
+
+.hero-image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 37.5rem;
+    position: relative;
+}
+
+.hero-text{
+    text-align: start;
+    position: absolute;
+    padding: 35px;
+    background-color: var(--clr-black);
+    color: white;
+    bottom: 0;
+}
+
+.service_head{
+    background-image: url(./../../images/SPC_services.jpg);
+}
+
+.heading-text::before{
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    filter: blur(20px);
+} 
 
 /**********************
     GENERAL STYLES
@@ -42,25 +70,7 @@ a:hover{
     color: var(--clr-black);
 }
 
-.fa-facebook{
-    color: #1778F2;
-}
 
-.fa-instagram{
-    color: #CD486B;
-}
-
-.fa-linkedin{
-    color: #0E76A8;
-}
-
-.fa-twitter{
-    color: #1DA1F2;
-}
-
-h1,h2,h3,h4,h5,h6{
-    color: var(--clr-base);
-}
 
 /**********************
         INDEX
