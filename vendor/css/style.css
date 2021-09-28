@@ -11,6 +11,12 @@
         HEADER
 **********************/
 
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
 .head{
     height: 37.5rem;
     background-size: cover;
