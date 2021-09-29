@@ -4,7 +4,7 @@
     --clr-base3: #036FDB;
     --clr-white: #fff;
     --clr-black: #000;
-    --clr-base4: ;
+    --clr-base4: #FFC000;
 }
 
 /**********************
@@ -15,6 +15,17 @@
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
+}
+
+.search_btn{
+    border: none;
+    background-color: var(--clr-white);
+    font-size: 20px;
+    color: var(--clr-base3);
+}
+
+.search{
+    border-radius: 0.93rem;
 }
 
 .head{
@@ -84,7 +95,9 @@ a:hover{
     color: var(--clr-black);
 }
 
-
+.mb2{
+    margin-bottom: -1px;
+}
 
 /**********************
         INDEX
@@ -106,6 +119,7 @@ a:hover{
     height: 50px;
     font-size: 25px;
 }
+
 
 /**********************
         ABOUT
@@ -134,11 +148,33 @@ a:hover{
 }
 
 /**********************
-      TEAM_VIEW
+      Contact Us
 **********************/
 
-.card{
+.form-cont{
+    width: 37.5rem;
+}
+
+textarea{
+    vertical-align: top;
+    margin-top: 35px;
+    margin-left: -70px;
+}
+
+.submit{
+    border-radius: 5px;
+    height: 40px;
     border: none;
-    margin-top:20px;
-    margin-bottom: 50px;
+}
+
+@media (max-width: 767px){
+    .about-head,.assure-head,.fin-head,.ita-head,.risk-head,.service-head,.tax-head,.train-head{
+        background-image: none;
+        background-color: var(--clr-base);
+        height: 16rem;
+    }   
+
+    .hero-text{
+        width: 95%;
+    }
 }
