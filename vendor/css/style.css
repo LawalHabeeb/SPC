@@ -17,6 +17,10 @@
     transform: translatex(-50%);
 }
 
+.navbar .navbar-nav .nav-link:hover{
+    border-bottom: 2px solid var(--clr-base3);
+}
+
 .search_btn{
     border: none;
     background-color: var(--clr-white);
@@ -82,13 +86,13 @@
 }
 
 /**********************
-        HEADER
+        FOOTER
 **********************/
 
 .footer-wrapper{
     padding-top: 15px;
     background-color: #1b1b1b;
-    color: var(--clr-white);
+    color: #a7a7a7;
     font-size: 13px;
 }
 
@@ -152,6 +156,11 @@ a:hover{
     margin-left: 3px;
 }
 
+.modal-body{
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+
 /**********************
       SERVICES
 **********************/
@@ -197,5 +206,19 @@ textarea{
 
     .hero-text{
         width: 95%;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .navbar .nav-item:hover .dropdown-menu{
+        display: block;
+    }
+
+    .dropdown{
+        z-index: 99;
+    }
+
+    .hero-image{
+        z-index: -99;
     }
 }
