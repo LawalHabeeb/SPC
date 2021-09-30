@@ -82,6 +82,21 @@
 }
 
 /**********************
+        HEADER
+**********************/
+
+.footer-wrapper{
+    padding-top: 15px;
+    background-color: #1b1b1b;
+    color: var(--clr-white);
+    font-size: 13px;
+}
+
+.featured{
+    color: var(--clr-white);
+}
+
+/**********************
     GENERAL STYLES
 **********************/
 
@@ -166,6 +181,12 @@ textarea{
     height: 40px;
     border: none;
 }
+
+
+
+/**********************
+    SMALL SCREENS
+**********************/
 
 @media (max-width: 767px){
     .about-head,.assure-head,.fin-head,.ita-head,.risk-head,.service-head,.tax-head,.train-head{
