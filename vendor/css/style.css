@@ -103,6 +103,10 @@
     color: var(--clr-white);
 }
 
+.foot-about{
+    margin-left: 25px;
+}
+
 /**********************
     GENERAL STYLES
 **********************/
@@ -164,6 +168,11 @@ a:hover{
     overflow-y: auto;
 }
 
+.whoarewe{
+    text-decoration: underline;
+    color: var(--clr-base);
+}
+
 /**********************
       SERVICES
 **********************/
@@ -209,6 +218,18 @@ textarea{
 
     .hero-text{
         width: 95%;
+    }
+
+    .footer-wrapper .row{
+        display: block;
+    }
+
+    .footer-wrapper .row .col{
+        margin: 5px 25px;
+    }
+
+    .footer-wrapper .row .col .foot-about{
+        margin-left: 0;
     }
 }
 
