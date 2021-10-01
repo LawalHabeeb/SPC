@@ -107,6 +107,11 @@
     margin-left: 25px;
 }
 
+.social svg{
+    color: #fff;
+    font-size: 18px;
+}
+
 /**********************
     GENERAL STYLES
 **********************/
@@ -214,7 +219,19 @@ textarea{
         background-image: none;
         background-color: var(--clr-base);
         height: 16rem;
-    }   
+    } 
+
+    /* .hero-image{
+        z-index: -99;
+    }
+    
+    .nav-item{
+        z-index: 99;
+        width: 100%;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        background: ;
+    } */
 
     .hero-text{
         width: 95%;
@@ -225,12 +242,17 @@ textarea{
     }
 
     .footer-wrapper .row .col{
-        margin: 5px 25px;
+        padding: 5px 30px;
     }
 
     .footer-wrapper .row .col .foot-about{
         margin-left: 0;
     }
+
+    .footer-wrapper{
+        width: 100vw;
+    }
+
 }
 
 @media all and (min-width: 992px) {
