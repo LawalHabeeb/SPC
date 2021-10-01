@@ -43,7 +43,7 @@
 }
 
 .about-head{
-    background-image: url("./../../images/SPC_about.jpeg");
+    background-image: url("./../../images/SPC_aboutus.jpg");
 }
 
 .assure-head{
@@ -164,17 +164,6 @@ a:hover{
     overflow-y: auto;
 }
 
-.parent{
-    position: relative;
-}
-
-.child{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 /**********************
       SERVICES
 **********************/
@@ -247,5 +236,11 @@ textarea{
     .navbar-toggler {
         position: absolute;
         right: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .search{
+        display: none;
     }
 }
