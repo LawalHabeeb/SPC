@@ -322,12 +322,14 @@ textarea{
         text-align: center;
         color: #000;
     }
+    
+}
 
+@media (max-width: 991px) and (min-width: 651px){
     .show{
-        margin-bottom: 200px;
+        margin-bottom: 150px;
         transition: margin-bottom 0.2s linear;
     }
-    
 }
 
 @media (max-width: 650px){
@@ -338,6 +340,11 @@ textarea{
 
     .search-box .search-txt, .search-box .search-btn{
         display: none;
+    }
+
+    .show{
+        margin-bottom: 200px;
+        transition: margin-bottom 0.2s linear;
     }
 }
 
@@ -352,10 +359,4 @@ textarea{
     }
 }
 
-@media only screen and (min-width: 767) and (max-width: 991px){
-    .show{
-        margin-bottom: 160px;
-        transition: margin-bottom 0.4s ease-in-out;
-    }
-}
 
