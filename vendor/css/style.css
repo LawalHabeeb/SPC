@@ -189,7 +189,11 @@ a:hover{
 
 .modal-body{
     max-height: calc(100vh - 210px);
-    overflow-y: auto;
+    overflow-y: scroll;
+}
+
+body .modal-open{
+    overflow: scroll;
 }
 
 .whoarewe{
@@ -250,7 +254,7 @@ textarea{
         z-index: -99;
     }
     
-    .show{
+    .navbar .show{
         background-color: var(--clr-black);
         color: var(--clr-white);
         z-index: 99;
@@ -326,10 +330,11 @@ textarea{
 }
 
 @media (max-width: 991px) and (min-width: 651px){
-    .show{
+    .navbar .show{
         margin-bottom: 150px;
         transition: margin-bottom 0.2s linear;
     }
+
 }
 
 @media (max-width: 650px){
@@ -342,7 +347,7 @@ textarea{
         display: none;
     }
 
-    .show{
+    .navbar .show{
         margin-bottom: 200px;
         transition: margin-bottom 0.2s linear;
     }
