@@ -201,6 +201,20 @@ body .modal-open{
     color: var(--clr-base);
 }
 
+.vmv{
+    position: relative;
+    border: 2px solid var(--clr-base);
+    padding: 20px;
+}
+
+.icon{
+    position: absolute;
+    font-size: 50px;
+    top: -25px;
+    background-color: var(--clr-white);
+    color: var(--clr-base4);
+}
+
 /**********************
       SERVICES
 **********************/
@@ -280,9 +294,23 @@ textarea{
         width: 100vw;
     }
 
+
     /* .search-txt{
         display: none;
     } */
+
+}
+
+@media (max-width:576px) {
+
+    .vismis{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .vismis .vmv{
+        margin-bottom: 35px;
+    }
 
 }
 
