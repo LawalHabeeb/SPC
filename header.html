@@ -1,109 +1,229 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title></title>
+    <meta charset="utf-8">
+    <title></title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="vendor/css/all.min.css">
+    <link rel="stylesheet" href="vendor/css/all.min.css">
     <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/css/style.css">
-
-	<script src="vendor/js/jquery.min.js"></script>
+    
     <script src="vendor/js/all.min.js"></script>
-	<script src="vendor/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/js/bootstrap.bundle.min.js"></script>
+
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+
+        :root {
+        --background: rgba(31, 64, 110, 0.85);
+        }
+
+        *, *::before, *::after {
+        box-sizing: border-box;
+        }
+
+        .content {
+        height: 200vh;
+        background-image: url(//unsplash.it/1000/1000);
+        background-color: #333;
+        background-blend-mode: multiply;
+        background-size: cover;
+        display: grid;
+        place-items: center;
+        }
+
+        /* navigation styles start here */
+
+        header {
+        background: var(--background);
+        text-align: center;
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        }
+
+        /* changed this from the tutorial video to
+        allow it to gain focus, making it tabbable */
+        .nav-toggle {
+        position: absolute !important;
+        top: -9999px !important;
+        left: -9999px !important;
+        }
+
+        .nav-toggle:focus ~ .nav-toggle-label {
+        outline: 3px solid rgba(lightblue, .75);
+        }
+
+        .nav-toggle-label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 1em;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        }
+
+        .nav-toggle-label span,
+        .nav-toggle-label span::before,
+        .nav-toggle-label span::after {
+        display: block;
+        background: white;
+        height: 2px;
+        width: 2em;
+        border-radius: 2px;
+        position: relative;
+        }
+
+        .nav-toggle-label span::before,
+        .nav-toggle-label span::after {
+        content: '';
+        position: absolute;
+        }
+
+        .nav-toggle-label span::before {
+        bottom: 7px;
+        }
+
+        .nav-toggle-label span::after {
+        top: 7px;
+        }
+
+        nav {
+        position: absolute;
+        text-align: left;
+        top: 100%;
+        left: 0;
+        background: var(--background);
+        width: 100%;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform 400ms ease-in-out;
+        }
+
+        nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        }
+
+        nav li {
+        margin-bottom: 1em;
+        margin-left: 1em;
+        }
+
+        nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+        }
+
+        nav a:hover {
+        color: #6F7881;
+        }
+
+        .nav-toggle:checked ~ nav {
+        transform: scale(1,1);
+        }
+
+        .nav-toggle:checked ~ nav a {
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 250ms;
+        }
+
+        @media screen and (min-width: 800px) {
+            .nav-toggle-label {
+                display: none;
+            }
+
+            header {
+                display: grid;
+                grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+            }
+            
+            .logo {
+                grid-column: 2 / 3;
+            }
+            
+            nav {
+                all: unset; 
+                position: relative;
+                text-align: left;
+                transition: none;
+                transform: scale(1,1);
+                background: none;
+                top: initial;
+                left: initial;
+                grid-column: 3 / 4;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            
+            nav ul {
+                display: flex;
+            }
+            
+            nav li {
+                margin-left: 3em;
+                margin-bottom: 0;
+            }
+            
+            nav a {
+                opacity: 1;
+                position: relative;
+            }
+            
+            nav a::before {
+                content: '';
+                display: block;
+                height: 5px;
+                background: black;
+                position: absolute;
+                top: -.75em;
+                left: 0;
+                right: 0;
+                transform: scale(0, 1);
+                transition: transform ease-in-out 250ms;
+            }
+
+            nav a:hover {
+            color: #6F7881;
+            }
+            
+            nav a:hover::before {
+                transform: scale(1,1);
+            }
+        }
+    </style>
 </head>
 <body>
+    <header>
+      <a href="index.html" class="navbar-brand" style="margin: 15px 0"> <img src="images/spc_logo02.png" height="50"></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <nav>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Insights</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </header>
 
-	<header>
-		<div class="container-fluid">
-		  <nav class="navbar navbar-expand-lg navbar-light">
-			<div class="container-fluid">
-			  <a class="navbar-brand text-primary" href="index.html">
-				<img
-				  src="images/SPC_logo02.png"
-				  alt="SPC logo"
-				  height="50"
-				  class="d-inline-block align-text-top logo_img"
-				/>
-			  </a>
-			  <button
-				class="navbar-toggler ml-auto hidden-sm-up float-xs-right"
-				type="button"
-				data-bs-toggle="collapse"
-				data-bs-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			  >
-				<span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse overlay" id="navbarSupportedContent" style>
-				<ul class="navbar-nav navbar-center me-auto mb-2 mb-lg-0">
-				  <li class="nav-item">
-					<a class="nav-link text-dark me-4" href="about.html">About</a>
-				  </li>
-				  <li class="nav-item dropdown">
-					<a class="nav-link text-dark me-4" href="insights">Insights</a>
-				  </li>
-				  <li class="nav-item dropdown">
-					<a class="nav-link text-dark me-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Services </a>
-					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-					  <li>
-					  	<a class="dropdown-item" href="services.html">Services</a>
-					  </li>
-					  <hr style="height: 3px; color: #FFC000; margin-top: -1px; margin-bottom: -1px;">
-					  <li>
-						<a class="dropdown-item" href="accandass.html">Accounting and Assurance</a>
-					  </li>
-					  <li>
-						<a class="dropdown-item" href="fin.html">Financial Advisory</a>
-					  </li>
-					  <li>
-						<a class="dropdown-item" href="ita.html">Information Technology Advisory</a>
-					  </li>
-					  <li>
-						<a class="dropdown-item" href="risk.html">Risk Advisory</a>
-					  </li>
-					  <li>
-						<a class="dropdown-item" href="tax.html">Tax Advisory</a>
-					  </li>
-					</ul>
-				  </li>
-				  <li class="nav-item">
-					<a
-					  class="nav-link text-dark me-4"
-					  href="contact.html"
-					  >Contact Us</a
-					>
-				  </li>
-				  <li class="nav-item">
-					<div class="d-flex search-box1">
-						<input type="text" name="" placeholder="Search..." class="search-txt">
-					    <button class="search-btn">
-						  <i class="fa fa-search"></i>
-					  </button>
-					</div>
-				  </li>
-				</ul>
-			  </div>
-			  <div class="d-flex search-box">
-			  	<input type="text" name="" placeholder="Search..." class="search-txt">
-				<button class="search-btn">
-					<i class="fa fa-search"></i>
-				</button>
-			  </div>
-			</div>
-		  </nav>
-		</div>
-	  </header>	
-
-	  <div class="hero-image about-head">
+    <div class="hero-image about-head">
 		<div class="hero-text">
 			<h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">About Us</h2>
 			<p>The firm comprises of dedicated and experienced	young talented professionals and is assisted by strong committed staff</p>
 		</div>
-	  </div>
+	</div>
 </body>
 </html>
