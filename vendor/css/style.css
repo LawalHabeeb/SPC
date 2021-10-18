@@ -297,8 +297,8 @@ body{
     font-size: 16px;
 }
 
-.footer-services li a{
-    color: var(--clr-base2);
+.footer-services li a, .footer-child1 ul li a{
+    color: var(--clr-white);
 }
 
 .footer-services li a:hover, .footer-child1 ul li a:hover{
@@ -347,9 +347,6 @@ a:hover{
     margin-bottom: -1px;
 }
 
-ul, ol{
-    padding-left: initial;
-}
 
 /**********************
         INDEX
